@@ -16,6 +16,7 @@
       state: present
   - name: Run Ansible Tower setup
     shell: /root/ansible-tower-setup-latest/setup.sh
+    become: true
     async: 3600
     poll: 36
 
